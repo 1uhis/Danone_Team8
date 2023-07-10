@@ -1,0 +1,28 @@
+/* home.css */
+@font-face {
+  font-family: "BrushUp";
+  src: url("../Brush Up.otf"); /* Update the path to the font file */
+}
+
+.title {
+  text-align: center;
+  font-family: "BrushUp", cursive; 
+  font-size: 80px;
+  color: #005EB8;
+  margin-top: 15%; 
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-image: url("../background-image.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}

@@ -2,11 +2,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import logo from '../logo.png';
 
 function Navbar() {
   return (
     <nav className="navbar">
+    <img src={logo} alt="Logo" className="logo" />
       <ul className="navbar-nav">
+       <li className="nav-item nav-text"> 
+          Plant Management System
+        </li>
         <li className="nav-item">
           <Link to="/" className="nav-link">
             Home
