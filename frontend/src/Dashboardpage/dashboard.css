@@ -32,6 +32,14 @@ body {
     justify-content: center;
     gap: 40px;
 }
+.operation-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #ffffff77;
+}
 .hide {
     display: none;
 }
@@ -41,10 +49,10 @@ body {
     align-items: center;
     font-family: "BrushUp", cursive;
     color: #005EB8;
-    font-size: 48px;
-    border: 5px solid #005EB8;
-    width: 400px;
-    height: 80px;
+    font-size: 24px;
+    border: 2px solid #005EB8;
+    width: 200px;
+    height: 40px;
     border-radius: 50px;
     cursor: pointer;
     -webkit-user-select: none;
@@ -58,4 +66,45 @@ body {
     color: white;
     transition: 0.5s;
     transform: translate(0, -5px);
+}
+
+.data-list{
+    padding: 20px;
+}
+.list-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.list-table th,
+.list-table td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.list-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.list-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.list-table tr:hover {
+    background-color: #e6e6e6;
+}
+
+.list-table td a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.list-table td a:hover {
+    text-decoration: underline;
 }
