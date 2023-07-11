@@ -26,6 +26,7 @@ function Navbar() {
             <img src={logo} alt="Logo" className="logo"/>
             <ul className="navbar-nav">
                 <li className="nav-text">
+
                     Plant Management System
                 </li>
                 <li className="nav-item">
