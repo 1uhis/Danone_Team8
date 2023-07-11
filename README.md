@@ -10,7 +10,7 @@ $ cd backend
 $ npm i
 ```
 
-In the frontend directory, you can run the following:
+In the root and frontend directory, you can run the following:
 
 #### `npm start`
 
