@@ -1,28 +1,61 @@
 /* home.css */
 @font-face {
-  font-family: "BrushUp";
-  src: url("../Brush Up.otf"); /* Update the path to the font file */
+    font-family: "BrushUp";
+    src: url("../Brush Up.otf"); 
 }
 
 .title {
-  text-align: center;
-  font-family: "BrushUp", cursive; 
-  font-size: 80px;
-  color: #005EB8;
-  margin-top: 15%; 
+    text-align: center;
+    font-family: "BrushUp", cursive;
+    font-size: 80px;
+    color: #005EB8;
+    margin-top: 15%;
 }
 
 .content {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 body {
-  background-image: url("../background-image.png"); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+    background-image: url("../background-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.hide {
+    display: none;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "BrushUp", cursive;
+    color: #005EB8;
+    font-size: 48px;
+    border: 5px solid #005EB8;
+    width: 400px;
+    height: 80px;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #005EB8;
+    color: white;
+    transition: 0.5s;
+    transform: translate(0, -5px);
 }
