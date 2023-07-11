@@ -36,13 +36,15 @@
   }
   
  .logo {
-  width: 120px; 
+  width: 150px; 
   height: auto;
 }
+
  .nav-text {
   color: #005EB8;
   font-family: "BrushUp", cursive;
   font-size: 23px;
-  padding-right: 20px;
+  position: absolute;
+  left: 180px;
 }
   

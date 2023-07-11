@@ -2,6 +2,9 @@
 import React, {useEffect, useState} from 'react';
 import {login} from "../api";
 
+import './login.css'
+import logo2 from '../logo2.png'
+
 function LoginPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -39,6 +42,12 @@ function LoginPage() {
     };
 
     return (
+
+        <div className="login-page">
+          <div className="logo-container">
+             <img src={logo2} alt="Logo" className="logo2" /> {/* Add the logo */}
+          </div>
+         <div className="login-form">
         <div>
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
@@ -62,6 +71,7 @@ function LoginPage() {
                 </div>
                 <button type="submit">Login</button>
             </form>
+            </div>
         </div>
     );
 }

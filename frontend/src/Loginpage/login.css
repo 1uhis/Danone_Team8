@@ -1,0 +1,67 @@
+/* login.css */
+
+@font-face {
+    font-family: "BrushUp";
+    src: url("../Brush Up.otf"); 
+}
+
+.login-page {
+  background-image: url("../background-image2.png"); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding-top: 10px; 
+  padding-bottom: 20px; 
+  padding-left: 50px; 
+  padding-right: 65px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.login-form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: -20px;
+  margin-bottom: 5px;
+  color:white;
+  font-family: "BrushUp", cursive;
+}
+
+.login-form label span {
+  margin-right: 10px;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo2 {
+  width: 250px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.login-form button[type="submit"] {
+  width: 113%; 
+  color:#0055EB;
+  background-color: #fff;
+  font-family: "BrushUp", cursive;
+  border: none;
+  height:30px;
+}
