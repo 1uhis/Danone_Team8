@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
     "start": "node backend/index",
-    "server": "node backend/index --NODE_ENV=production",
+    "server": "cross-env NODE_ENV=production nodemon backend/index",
     "data:import": "node backend/data/seeder",
     "data:destroy": "node backend/data/seeder -d"
   },
@@ -26,5 +28,10 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
     "pdfkit": "^0.13.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7",
+    "cross-env": "^7.0.3"
   }
 }
