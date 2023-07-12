@@ -4,6 +4,7 @@ First, download the Node.js on your computer.
 Then, you need to install all the node modules in both the backend & frontend.
 
 ```
+$ pnpm install
 $ cd frontend
 $ npm i
 $ cd backend
