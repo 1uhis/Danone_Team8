@@ -32,7 +32,11 @@ function LoginPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add login logic here
+        if (!username || !password) {
+    // Display a reminder if either the username or password is empty
+    alert('Please enter both username and password');
+    return;
+  }
         console.log('Username:', username);
         console.log('Password:', password);
         login(username, password).then(res => {
@@ -49,7 +53,7 @@ function LoginPage() {
           </div>
          <div className="login-form">
         <div>
-            <h1>Login</h1>
+    
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="username">Username:</label>
@@ -72,6 +76,7 @@ function LoginPage() {
                 <button type="submit">Login</button>
             </form>
             </div>
+        </div>
         </div>
     );
 }
