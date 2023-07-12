@@ -3,3 +3,7 @@
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
+/node_modules/
+/frontend/node_modules/
+/pnpm-lock.yaml
+/frontend/pnpm-lock.yaml
