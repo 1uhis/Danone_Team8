@@ -34,9 +34,9 @@ function Navbar() {
                     </Link>}
                 </li>
                 <li className="nav-item">
-                    {userInfo.email ? <Link to="/logout" className="nav-link">
+                    {userInfo.email ? <Link to="/login" className="nav-link">
                         Logout
-                    </Link> : <Link to="/login" className="nav-link">
+                    </Link> : <Link to="/logout" className="nav-link">
                         Login
                     </Link>}
                 </li>
