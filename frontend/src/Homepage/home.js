@@ -5,17 +5,17 @@ import './home.css';
 
 function HomePage() {
 
-    useEffect(() => {
+    useEffect(() => {/*
         const userInfo = localStorage.getItem('userInfo');
         try {
             typeof userInfo === 'string' && JSON.parse(userInfo);
             if (userInfo.email) {
-                window.location.href = '/dashboard';
+                window.location.href = '/';
             }
         } catch (e) {
             localStorage.removeItem('userInfo');
         }
-    })
+    */})
   return (
     <div>
       <Navbar />

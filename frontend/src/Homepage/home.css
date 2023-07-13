@@ -1,7 +1,7 @@
 /* home.css */
 @font-face {
     font-family: "BrushUp";
-    src: url("../Brush Up.otf"); /* Update the path to the font file */
+    src: url("../Brush Up.otf"); 
 }
 
 .title {
