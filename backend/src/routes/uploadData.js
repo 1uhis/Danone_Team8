@@ -28,7 +28,9 @@ router.post('/', upload.single('file'), (req, res) => {
                 validatePromiseArray.push(Production.findOne({productionOrder: a}))
             })
 
-            const result = await Promise.all(validatePromiseArray)
+            let result = await Promise.all(validatePromiseArray)
+            result = result.filter(e=>!!e)
+
             if (result.length) {
                 res.status(400).json({message: 'Duplicate Production Order'})
             } else {

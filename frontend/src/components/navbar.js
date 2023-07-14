@@ -30,7 +30,7 @@ function Navbar() {
                     Plant Management System
                 </li>
                 <li className="nav-item">
-                    {userInfo.email && <Link to="/login" className="nav-link">
+                    {userInfo.email && <Link to="/dashboard" className="nav-link">
                         Profile
                     </Link>}
                 </li>

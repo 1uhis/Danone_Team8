@@ -26,7 +26,7 @@ function DashboardPage() {
             body: formData
         }).then(res=>{
             console.log(res)
-            if (res.status==='200'){
+            if (res.status===200){
                 getData()
             }else{
               res.json().then(_res=>{
