@@ -7,7 +7,7 @@ function LogoutPage() {
     useEffect(() => {
         localStorage.setItem('userInfo', JSON.stringify({}))
         localStorage.removeItem('userInfo');
-        window.location.href = '/login';
+        window.location.href = '/';
     },[])
 
     return (
